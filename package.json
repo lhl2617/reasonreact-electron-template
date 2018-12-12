@@ -1,0 +1,27 @@
+{
+  "name": "reasonreact-electron-template",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "bsb -make-world",
+    "clean": "bsb -clean-world && node scripts.js clean",
+    "webpack:production": "cross-env NODE_ENV=production webpack && node scripts.js webpack",
+    "start": "electron build",
+    "webpack": "webpack && node scripts.js webpack"
+  },
+  "dependencies": {
+    "electron": "latest",
+    "fs-extra": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "reason-react": "latest",
+    "uglify-js": "latest"
+  },
+  "devDependencies": {
+    "bs-platform": "latest",
+    "cross-env": "latest",
+    "html-webpack-plugin": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest"
+  }
+}
