@@ -12,8 +12,6 @@
   "dependencies": {
     "electron": "latest",
     "fs-extra": "latest",
-    "react": "latest",
-    "react-dom": "latest",
     "reason-react": "latest",
     "uglify-js": "latest"
   },
