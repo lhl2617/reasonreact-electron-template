@@ -5,21 +5,22 @@
   "scripts": {
     "build": "bsb -make-world",
     "clean": "bsb -clean-world && node scripts.js clean",
-    "webpack:production": "cross-env NODE_ENV=production webpack && node scripts.js webpack",
+    "pack": "electron-packager build",
     "start": "electron build",
-    "webpack": "webpack && node scripts.js webpack"
+    "webpack": "webpack && node scripts.js webpack",
+    "webpack:production": "cross-env NODE_ENV=production webpack && node scripts.js webpack"
   },
   "dependencies": {
-    "electron": "latest",
-    "fs-extra": "latest",
-    "reason-react": "latest",
-    "uglify-js": "latest"
+    "electron": "^3.0.13",
+    "fs-extra": "^7.0.1",
+    "reason-react": "^0.5.3"
   },
   "devDependencies": {
-    "bs-platform": "latest",
-    "cross-env": "latest",
-    "html-webpack-plugin": "latest",
-    "webpack": "latest",
-    "webpack-cli": "latest"
+    "bs-platform": "^4.0.14",
+    "cross-env": "^5.2.0",
+    "electron-packager": "^13.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
   }
 }
